@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML5</title>
+    <link rel="stylesheet" href="css.css"/>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="caja">
+      <h1>Christian Aldair Cordero Zuñiga</h1>
+      <header>
+        <nav>
+          <ul>
+            <a href="#sobremi">Sobre mi</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#contacto">Contáctame</a>
+          </ul>
+        </nav>
+      </header>
+    <h1>Sobre mi</h1>
+    <section id="sobremi">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+      <p>Amet aliquam inventore qui tenetur ab distinctio consequuntur...</p>
+    </section>
+    <h1>Proyectos</h1>
+    <section id="proyectos">
+      <article>
+        <p>Lorem, ipsum.</p>
+        <p>Consequatur, ratione.</p>
+      </article>
+      <article>
+        <p>Lorem, ipsum.</p>
+        <p>Nesciunt, ipsam?</p>
+      </article>
+      <article>
+        <p>Lorem, ipsum.</p>
+        <p>Eligendi, dignissimos.</p>
+      </article>
+    </section>
+    <section>
+      <article>
+        <p>Lorem, ipsum.</p>
+        <p>Sunt, nulla.</p>
+      </article>
+      <article>
+        <p>Lorem, ipsum.</p>
+        <p>Repellendus, numquam?</p>
+      </article>
+      <article>
+        <p>Lorem, ipsum.</p>
+        <p>Nulla, velit?</p>
+      </article>
+    </section>
+    <h1>Contáctame</h1>
+    <section id="contacto">
+        <form id="formulario">
+            <label for="nombre">Nombre:</label>
+            <input id="nombre" type="text"/>
+            <label for="apellido">Apellido:</label>
+            <input id="apellido" type="text"/>
+            <label for="email">Email:</label>
+            <input id="email" type="email"/>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje"></textarea>
+            <button type="submit">Contactar</button>
+        </form>  
+        <script>
+            const formulario = document.getElementById("formulario");
+            formulario.addEventListener("submit", (evento) => {
+            evento.preventDefault(); // evita que la página se recargue
+            const nombre = document.getElementById("nombre").value;
+            const apellido = document.getElementById("apellido").value;
+            const email = document.getElementById("email").value;
+            const mensaje = document.getElementById("mensaje").value;
+            alert("Mensaje enviado!");
+            console.log("Nombre:", nombre);
+            console.log("Apellido:", apellido);
+            console.log("Email:", email);
+            console.log("Mensaje:", mensaje);
+            });
+            
+        </script>
+    </section>
+    <footer>
+      <p>&copy; 2026 Mi Sitio Web. Todos los derechos reservados.</p>
+      <p>Diseñado por Christian</p>
+      <nav>
+        <a href="index.html">INDEX</a>
+        <a href="html5.html">HTML5</a>
+        <a href="css.html">CSS</a>
+        <a href="https://2511080097-dot.github.io/webconia2/">Mi Portafolio</a>
+        <a href="javascript.html">JavaScript</a>
+      </nav>
+    </footer>
+  </body>
+</html>
