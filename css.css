@@ -54,21 +54,3 @@ footer a{
 footer a:hover{
   color: rgb(236, 231, 229);
 }
-#formulario {
-    width: 400px;
-}
-#formulario label {
-    display: inline-block;
-    width: 80px;
-    margin-bottom: 10px;
-}
-#formulario input {
-    width: 300px;
-}
-#formulario textarea {
-    width: 300px;
-    height: 100px;
-}
-#formulario button {
-    margin-top: 10px;
-}

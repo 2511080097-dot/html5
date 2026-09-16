@@ -1,91 +1,80 @@
 <!doctype html>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML5</title>
-    <link rel="stylesheet" href="css.css"/>
-    <script src="script.js"></script>
+    <title>JavaScript</title>
   </head>
+  <link rel="stylesheet" href="jsestilo.css" />
   <body>
-    <div class="caja">
-      <h1>Christian Aldair Cordero Zuñiga</h1>
-      <header>
-        <nav>
-          <ul>
-            <a href="#sobremi">Sobre mi</a>
-            <a href="#proyectos">Proyectos</a>
-            <a href="#contacto">Contáctame</a>
-          </ul>
-        </nav>
-      </header>
-    <h1>Sobre mi</h1>
-    <section id="sobremi">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-      <p>Amet aliquam inventore qui tenetur ab distinctio consequuntur...</p>
-    </section>
-    <h1>Proyectos</h1>
-    <section id="proyectos">
-      <article>
-        <p>Lorem, ipsum.</p>
-        <p>Consequatur, ratione.</p>
-      </article>
-      <article>
-        <p>Lorem, ipsum.</p>
-        <p>Nesciunt, ipsam?</p>
-      </article>
-      <article>
-        <p>Lorem, ipsum.</p>
-        <p>Eligendi, dignissimos.</p>
-      </article>
-    </section>
-    <section>
-      <article>
-        <p>Lorem, ipsum.</p>
-        <p>Sunt, nulla.</p>
-      </article>
-      <article>
-        <p>Lorem, ipsum.</p>
-        <p>Repellendus, numquam?</p>
-      </article>
-      <article>
-        <p>Lorem, ipsum.</p>
-        <p>Nulla, velit?</p>
-      </article>
-    </section>
-    <h1>Contáctame</h1>
-    <section id="contacto">
-        <form id="formulario">
-            <label for="nombre">Nombre:</label>
-            <input id="nombre" type="text"/>
-            <label for="apellido">Apellido:</label>
-            <input id="apellido" type="text"/>
-            <label for="email">Email:</label>
-            <input id="email" type="email"/>
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje"></textarea>
-            <button type="submit">Contactar</button>
-        </form>  
-        <script>
-            const formulario = document.getElementById("formulario");
-            formulario.addEventListener("submit", (evento) => {
-            evento.preventDefault(); // evita que la página se recargue
-            const nombre = document.getElementById("nombre").value;
-            const apellido = document.getElementById("apellido").value;
-            const email = document.getElementById("email").value;
-            const mensaje = document.getElementById("mensaje").value;
-            alert("Mensaje enviado!");
-            console.log("Nombre:", nombre);
-            console.log("Apellido:", apellido);
-            console.log("Email:", email);
-            console.log("Mensaje:", mensaje);
-            });
-            
-        </script>
-    </section>
+    <h1 id="titulo">Christian Aldair</h1>
+
+    <button id="btnCambiar">Cambiar texto</button>
+
+    <ul id="lista"></ul>
+    <button id="btnAgregar">Agregar elemento</button>
+    <button id="btn">Haz clic aquí</button>
+    <br /><br />
+    <h1>Presiona una tecla</h1>
+    <p id="resultado"></p>
+
+    <form id="formulario">
+      <input id="nombre" type="text" />
+      <button type="submit">Guardar</button>
+    </form>
+    <p id="datoGuardado"></p>
+
+    <script>
+      const titulo = document.getElementById("titulo");
+
+      titulo.style.color = "black";
+      titulo.style.fontSize = "30px";
+
+      const botonCambiar = document.getElementById("btnCambiar");
+
+      botonCambiar.addEventListener("click", function () {
+        titulo.textContent = "Cordero Zuñiga";
+        titulo.style.color = "blue";
+        titulo.style.fontSize = "40px";
+      });
+
+      const lista = document.getElementById("lista");
+      const botonAgregar = document.getElementById("btnAgregar");
+
+      botonAgregar.addEventListener("click", function () {
+        const li = document.createElement("li");
+
+        li.textContent = "Nuevo elemento";
+
+        lista.appendChild(li);
+      });
+
+      const botonMensaje = document.getElementById("btn");
+
+      botonMensaje.addEventListener("click", function () {
+        console.log("Se hizo clic");
+        alert("¡Bienvenido!");
+      });
+      const resultado = document.getElementById("resultado");
+      document.addEventListener("keydown", (evento) => {
+        console.log("Tecla:", evento.key); // se ve en consola
+        alert("Tecla presionada!");
+        resultado.textContent = "Presionaste: " + evento.key; // se ve en la página
+      });
+
+      const formulario = document.getElementById("formulario");
+      formulario.addEventListener("submit", (evento) => {
+        evento.preventDefault(); // evita que la página se recargue
+        const nombre = document.getElementById("nombre").value; // obtiene el valor del input
+        alert("Dato guardado!");
+        console.log("Nombre:", nombre); // muestra el dato en consola
+        document.getElementById("datoGuardado").textContent =
+          "Dato guardado: " + nombre;
+      });
+    </script>
     <footer>
-      <p>&copy; 2026 Mi Sitio Web. Todos los derechos reservados.</p>
-      <p>Diseñado por Christian</p>
+      <p>&copy; 2026 Mi Sitio Web. Todos los derechos reservados</p>
       <nav>
         <a href="index.html">INDEX</a>
         <a href="html5.html">HTML5</a>
@@ -93,6 +82,6 @@
         <a href="https://2511080097-dot.github.io/webconia2/">Mi Portafolio</a>
         <a href="javascript.html">JavaScript</a>
       </nav>
-    </footer>
+    </footer>   
   </body>
 </html>
