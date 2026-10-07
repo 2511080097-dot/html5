@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Estudiante | SISACADEMICO UNDC</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet">
+</head>
+<div id="modal-idiomas" tabindex="-1" aria-hidden="true" class="hidden fixed top-0 left-0 right-0 z-[60] items-center justify-center w-full p-4 overflow-x-hidden overflow-y-auto h-[calc(100%-1rem)] max-h-full">
+  <div class="relative w-full max-w-md max-h-full">
+    <div class="relative bg-white rounded-lg shadow">
+      <div class="px-5 py-4 bg-blue-600 rounded-t-lg">
+        <h3 class="text-xl font-bold text-white">CENTRO DE IDIOMAS</h3>
+      </div>
+      <div class="p-6 text-center text-gray-800 space-y-5">
+        <p>Estimado estudiante, le corresponde</p>
+        <p class="text-4xl font-light">MEDIA BECA</p>
+        <p>en el <span class="text-blue-600">CENTRO DE IDIOMAS</span> de la UNDC</p>
+        <p>Informes:<br><span class="text-blue-600">949 027 183</span></p>
+        <button type="button" class="w-full text-white bg-blue-600 hover:bg-blue-700 font-medium rounded-full px-5 py-3">Matricularme</button>
+      </div>
+      <div class="flex justify-end px-5 py-3 bg-gray-50 rounded-b-lg">
+        <button data-modal-hide="modal-idiomas" type="button" class="text-white bg-gray-500 hover:bg-gray-600 font-medium rounded-full text-sm px-5 py-2.5">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<body class="bg-gray-100 text-gray-800">
+<nav class="fixed top-0 z-40 w-full bg-white border-b border-gray-200">
+ <div class="flex items-center justify-between px-3 py-2 lg:pl-68">
+  <button data-drawer-target="sidebar" data-drawer-toggle="sidebar" aria-controls="sidebar" type="button" class="p-2 text-gray-500 rounded-lg sm:hidden hover:bg-gray-100"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"/></svg></button>
+  <div class="hidden sm:block sm:ml-64"></div>
+  <div class="flex items-center gap-3 ms-auto">
+   <span class="bg-blue-600 text-white text-sm font-bold px-3 py-1 rounded">Estudiante</span>
+   <img class="w-9 h-9 rounded-full bg-gray-200" src="https://flowbite.com/docs/images/people/profile-picture-5.jpg" alt="perfil">
+   <span class="hidden md:block text-gray-500 uppercase text-sm">Christian Aldair Cordero</span>
+  </div>
+ </div>
+</nav>
+<aside id="sidebar" class="fixed top-0 left-0 z-50 w-64 h-screen -translate-x-full sm:translate-x-0 transition-transform bg-gray-800" aria-label="Barra lateral">
+ <div class="h-full px-3 py-4 overflow-y-auto">
+  <a href="index.html" class="flex items-center px-2 mb-4 text-xl text-white">SISACADEMICO | UNDC</a>
+  <div class="flex items-center gap-3 px-2 py-3 border-y border-gray-700 mb-3">
+   <img class="w-10 h-10 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-5.jpg" alt="">
+   <span class="text-white text-sm uppercase">Christian Aldair Cordero</span>
+  </div>
+  <form class="mb-3"><div class="relative"><input type="search" class="block w-full p-2.5 pe-10 text-sm text-white bg-gray-700 border border-gray-600 rounded-lg placeholder-gray-400" placeholder="Search"><svg class="absolute top-3 end-3 w-4 h-4 text-white" fill="none" viewBox="0 0 20 20"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 111 8a7 7 0 0114 0z"/></svg></div></form>
+  <ul class="space-y-1 font-medium"><li><a href="#" data-view="inicio" data-title="Inicio" class="group flex items-center p-2 rounded-lg bg-blue-600 text-white"><svg class="w-5 h-5 text-gray-400 group-hover:text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h5v7H2V3zm8-1h7a1 1 0 011 1v4h-8V2zM2 11h8v7H3a1 1 0 01-1-1v-6zm9 0h7v6a1 1 0 01-1 1h-6v-7z"/></svg><span class="ms-3">Inicio</span></a></li></ul>
+  <p class="mt-4 mb-1 px-2 text-sm text-gray-300 uppercase">Estudiante</p>
+  <ul class="space-y-1 font-medium"><li><a href="#" data-view="s0" data-title="Dashboard" class="group flex items-center p-2 rounded-lg text-gray-300 hover:bg-gray-700 hover:text-white"><svg class="w-5 h-5 text-gray-400 group-hover:text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h5v7H2V3zm8-1h7a1 1 0 011 1v4h-8V2zM2 11h8v7H3a1 1 0 01-1-1v-6zm9 0h7v6a1 1 0 01-1 1h-6v-7z"/></svg><span class="ms-3">Dashboard</span></a></li>
+    <li>
+      <a href="#" data-view="s1" data-title="Mi cuenta" class="group flex items-center p-2 rounded-lg text-gray-300 hover:bg-gray-700 hover:text-white">
+        <svg class="w-5 h-5 text-gray-400 group-hover:text-white" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M2 3a1 1 0 011-1h5v7H2V3zm8-1h7a1 1 0 011 1v4h-8V2zM2 11h8v7H3a1 1 0 01-1-1v-6zm9 0h7v6a1 1 0 01-1 1h-6v-7z"/>
+        </svg>
+        <span class="ms-3">Mi cuenta</span>
+      </a>
+    </li>
+    <li>
+      <a href="#" data-view="s2" data-title="Ficha Socioeconómica" class="group flex items-center p-2 rounded-lg text-gray-300 hover:bg-gray-700 hover:text-white">
+        <svg class="w-5 h-5 text-gray-400 group-hover:text-white" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M2 3a1 1 0 011-1h5v7H2V3zm8-1h7a1 1 0 011 1v4h-8V2zM2 11h8v7H3a1 1 0 01-1-1v-6zm9 0h7v6a1 1 0 01-1 1h-6v-7z"/>
+        </svg>
+        <span class="ms-3">Ficha Socioeconómica</span>
+      </a>
+    </li>
+    <li>
+      <a href="#" data-view="s3" data-title="Pagos" class="group flex items-center p-2 rounded-lg text-gray-300 hover:bg-gray-700 hover:text-white">
+        <svg class="w-5 h-5 text-gray-400 group-hover:text-white" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M2 3a1 1 0 011-1h5v7H2V3zm8-1h7a1 1 0 011 1v4h-8V2zM2 11h8v7H3a1 1 0 01-1-1v-6zm9 0h7v6a1 1 0 01-1 1h-6v-7z"/>
+        </svg>
+        <span class="ms-3">Pagos</span>
+      </a>
+    </li>
+    <li>
+  <button type="button" data-collapse-toggle="dd-academica"
+    class="group flex items-center w-full p-2 rounded-lg text-gray-300 hover:bg-gray-700 hover:text-white">
+    <svg class="w-5 h-5 shrink-0 text-gray-400 group-hover:text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2 0 7l10 5 8-4v6h2V7L10 2zM4 11.5V15c0 1.5 3 3 6 3s6-1.5 6-3v-3.5l-6 3-6-3z"/></svg>
+    <span class="flex-1 ms-3 text-left whitespace-nowrap">Información académica</span>
+    <svg class="w-3 h-3" fill="none" viewBox="0 0 10 6"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/></svg>
+  </button>
+  <ul id="dd-academica" class="hidden py-1 space-y-1">
+    <li><a href="#" data-view="a0" data-title="Mis Asignaturas" class="flex items-center w-full p-2 ps-11 rounded-lg text-gray-300 hover:bg-gray-700 hover:text-white">Mis Asignaturas</a></li>
+    <li><a href="#" data-view="a1" data-title="Sílabus" class="flex items-center w-full p-2 ps-11 rounded-lg text-gray-300 hover:bg-gray-700 hover:text-white">Sílabus</a></li>
+    <li><a href="#" data-view="a2" data-title="Horario" class="flex items-center w-full p-2 ps-11 rounded-lg text-gray-300 hover:bg-gray-700 hover:text-white">Horario</a></li>
+    <li><a href="#" data-view="a3" data-title="Notas" class="flex items-center w-full p-2 ps-11 rounded-lg text-gray-300 hover:bg-gray-700 hover:text-white">Notas</a></li>
+  </ul>
+</li>
+      <li>
+        <a href="#" data-view="s5" data-title="Mis Trámites" class="group flex items-center p-2 rounded-lg text-gray-300 hover:bg-gray-700 hover:text-white"><svg class="w-5 h-5 text-gray-400 group-hover:text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h5v7H2V3zm8-1h7a1 1 0 011 1v4h-8V2zM2 11h8v7H3a1 1 0 01-1-1v-6zm9 0h7v6a1 1 0 01-1 1h-6v-7z"/></svg><span class="ms-3">Mis Trámites</span></a></li><li><a href="#" data-view="s6" data-title="Calidad" class="group flex items-center p-2 rounded-lg text-gray-300 hover:bg-gray-700 hover:text-white"><svg class="w-5 h-5 text-gray-400 group-hover:text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h5v7H2V3zm8-1h7a1 1 0 011 1v4h-8V2zM2 11h8v7H3a1 1 0 01-1-1v-6zm9 0h7v6a1 1 0 01-1 1h-6v-7z"/></svg><span class="ms-3">Calidad</span></a></li></ul>
+  <p class="mt-4 mb-1 px-2 text-sm text-gray-300 uppercase">Plataformas</p>
+  <ul class="space-y-1 font-medium"><li><a href="#" data-view="s7" data-title="Centro de Idiomas" data-modal-target="modal-idiomas" data-modal-show="modal-idiomas" class="group flex items-center p-2 rounded-lg text-gray-300 hover:bg-gray-700 hover:text-white"><svg class="w-5 h-5 shrink-0 text-gray-400 group-hover:text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h5v7H2V3zm8-1h7a1 1 0 011 1v4h-8V2zM2 11h8v7H3a1 1 0 01-1-1v-6zm9 0h7v6a1 1 0 01-1 1h-6v-7z"/></svg><span class="ms-3">Centro de Idiomas<span class="inline-flex items-center px-2 py-0.5 ms-2 text-xs font-semibold text-white bg-blue-600 rounded">New</span></span></a></li><li><a href="https://aula.undc.edu.pe/" target="_blank" rel="noopener" class="group flex items-center p-2 rounded-lg text-gray-300 hover:bg-gray-700 hover:text-white"><svg class="w-5 h-5 shrink-0 text-gray-400 group-hover:text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h5v7H2V3zm8-1h7a1 1 0 011 1v4h-8V2zM2 11h8v7H3a1 1 0 01-1-1v-6zm9 0h7v6a1 1 0 01-1 1h-6v-7z"/></svg><span class="ms-3">Aula virtual<svg class="inline w-3.5 h-3.5 ms-1" fill="none" viewBox="0 0 18 18"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11v4a1 1 0 01-1 1H3a1 1 0 01-1-1V4a1 1 0 011-1h4m4-1h5v5m0-5L8 10"/></svg></span></a></li><li><a href="#" data-view="s8" data-title="Biblioteca virtual" class="group flex items-center p-2 rounded-lg text-gray-300 hover:bg-gray-700 hover:text-white"><svg class="w-5 h-5 shrink-0 text-gray-400 group-hover:text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h5v7H2V3zm8-1h7a1 1 0 011 1v4h-8V2zM2 11h8v7H3a1 1 0 01-1-1v-6zm9 0h7v6a1 1 0 01-1 1h-6v-7z"/></svg><span class="ms-3">Biblioteca virtual</span></a></li><li><a href="https://www.undc.edu.pe" target="_blank" rel="noopener" class="group flex items-center p-2 rounded-lg text-gray-300 hover:bg-gray-700 hover:text-white"><svg class="w-5 h-5 shrink-0 text-gray-400 group-hover:text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h5v7H2V3zm8-1h7a1 1 0 011 1v4h-8V2zM2 11h8v7H3a1 1 0 01-1-1v-6zm9 0h7v6a1 1 0 01-1 1h-6v-7z"/></svg><span class="ms-3">SISTECU<svg class="inline w-3.5 h-3.5 ms-1" fill="none" viewBox="0 0 18 18"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11v4a1 1 0 01-1 1H3a1 1 0 01-1-1V4a1 1 0 011-1h4m4-1h5v5m0-5L8 10"/></svg></span></a></li><li><a href="https://gedipi.undc.edu.pe/gedipi/" target="_blank" rel="noopener" class="group flex items-center p-2 rounded-lg text-gray-300 hover:bg-gray-700 hover:text-white"><svg class="w-5 h-5 shrink-0 text-gray-400 group-hover:text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h5v7H2V3zm8-1h7a1 1 0 011 1v4h-8V2zM2 11h8v7H3a1 1 0 01-1-1v-6zm9 0h7v6a1 1 0 01-1 1h-6v-7z"/></svg><span class="ms-3">GEDIPI<svg class="inline w-3.5 h-3.5 ms-1" fill="none" viewBox="0 0 18 18"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11v4a1 1 0 01-1 1H3a1 1 0 01-1-1V4a1 1 0 011-1h4m4-1h5v5m0-5L8 10"/></svg></span></a></li></ul>
+  <p class="mt-4 mb-1 px-2 text-sm text-gray-300 uppercase">Otros</p>
+  <ul class="space-y-1 font-medium"><li><a href="https://drive.google.com/file/d/19QE96MWrwKNeYOb7EjnF-zS8DqWUsh_G/view" target="_blank" rel="noopener" class="group flex items-center p-2 rounded-lg text-gray-300 hover:bg-gray-700 hover:text-white">
+    <svg class="w-5 h-5 shrink-0 text-gray-400 group-hover:text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h5v7H2V3zm8-1h7a1 1 0 011 1v4h-8V2zM2 11h8v7H3a1 1 0 01-1-1v-6zm9 0h7v6a1 1 0 01-1 1h-6v-7z"/>
+    </svg>
+    <span class="ms-3">Calendario<span class="inline-flex items-center px-2 py-0.5 ms-2 text-xs font-semibold text-white bg-blue-600 rounded">2026</span>
+    <svg class="inline w-3.5 h-3.5 ms-1" fill="none" viewBox="0 0 18 18"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11v4a1 1 0 01-1 1H3a1 1 0 01-1-1V4a1 1 0 011-1h4m4-1h5v5m0-5L8 10"/>
+    </svg>
+  </span></a>
+</li>
+<li>
+      <a href="https://hiringroomcampus.com/?inactiveAccount" target="_blank" rel="noopener" class="group flex items-center p-2 rounded-lg text-gray-300 hover:bg-gray-700 hover:text-white">
+        <svg class="w-5 h-5 shrink-0 text-gray-400 group-hover:text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h5v7H2V3zm8-1h7a1 1 0 011 1v4h-8V2zM2 11h8v7H3a1 1 0 01-1-1v-6zm9 0h7v6a1 1 0 01-1 1h-6v-7z"/></svg><span class="ms-3">Bolsa de trabajo<svg class="inline w-3.5 h-3.5 ms-1" fill="none" viewBox="0 0 18 18"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11v4a1 1 0 01-1 1H3a1 1 0 01-1-1V4a1 1 0 011-1h4m4-1h5v5m0-5L8 10"/></svg></span></a></li><li><a href="https://reclamos.servicios.gob.pe/?institution_id=234" target="_blank" rel="noopener" class="group flex items-center p-2 rounded-lg text-gray-300 hover:bg-gray-700 hover:text-white"><svg class="w-5 h-5 shrink-0 text-gray-400 group-hover:text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h5v7H2V3zm8-1h7a1 1 0 011 1v4h-8V2zM2 11h8v7H3a1 1 0 01-1-1v-6zm9 0h7v6a1 1 0 01-1 1h-6v-7z"/></svg><span class="ms-3">Libro de Reclamaciones<svg class="inline w-3.5 h-3.5 ms-1" fill="none" viewBox="0 0 18 18"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11v4a1 1 0 01-1 1H3a1 1 0 01-1-1V4a1 1 0 011-1h4m4-1h5v5m0-5L8 10"/></svg></span></a></li><li><a href="https://drive.google.com/drive/folders/1MSGdU0IV5JNK42u1X7X9tGFvAuIX9OUr" target="_blank" rel="noopener" class="group flex items-center p-2 rounded-lg text-gray-300 hover:bg-gray-700 hover:text-white"><svg class="w-5 h-5 shrink-0 text-gray-400 group-hover:text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h5v7H2V3zm8-1h7a1 1 0 011 1v4h-8V2zM2 11h8v7H3a1 1 0 01-1-1v-6zm9 0h7v6a1 1 0 01-1 1h-6v-7z"/></svg><span class="ms-3">Convenios UNDC<svg class="inline w-3.5 h-3.5 ms-1" fill="none" viewBox="0 0 18 18"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11v4a1 1 0 01-1 1H3a1 1 0 01-1-1V4a1 1 0 011-1h4m4-1h5v5m0-5L8 10"/></svg></span></a></li><li><a href="undc.edu.pe/bienesyservicios/" target="_blank" rel="noopener" class="group flex items-center p-2 rounded-lg text-gray-300 hover:bg-gray-700 hover:text-white"><svg class="w-5 h-5 shrink-0 text-gray-400 group-hover:text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h5v7H2V3zm8-1h7a1 1 0 011 1v4h-8V2zM2 11h8v7H3a1 1 0 01-1-1v-6zm9 0h7v6a1 1 0 01-1 1h-6v-7z"/></svg><span class="ms-3">Convocatoria de bienes y servicios<svg class="inline w-3.5 h-3.5 ms-1" fill="none" viewBox="0 0 18 18"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11v4a1 1 0 01-1 1H3a1 1 0 01-1-1V4a1 1 0 011-1h4m4-1h5v5m0-5L8 10"/></svg></span></a></li></ul>
+ </div>
+</aside>
+<main class="sm:ml-64 pt-16 min-h-screen">
+ <div class="flex items-center justify-between px-5 py-4">
+  <h1 id="title" class="text-3xl">Inicio</h1>
+  <ol class="text-sm"><li class="inline text-blue-600">Inicio</li> <span class="mx-1 text-gray-400">/</span> <li id="crumb" class="inline">Inicio</li></ol>
+ </div>
+ <div data-panel id="v-inicio"><div class="grid grid-cols-1 lg:grid-cols-3 gap-4 px-5 pb-16">
+  <section class="bg-white rounded-lg shadow">
+   <h2 class="px-5 py-3 text-lg border-b">Comunicados</h2>
+   <div class="p-5"><div id="al-301" class="flex p-4 mb-4 text-white bg-green-600 rounded-lg" role="alert">
+  <svg class="shrink-0 w-4 h-4 mt-1" fill="currentColor" viewBox="0 0 20 20"><path d="M10 .5a9.5 9.5 0 100 19 9.5 9.5 0 000-19zM9.5 4a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM12 15H8a1 1 0 010-2h1v-3H8a1 1 0 010-2h2a1 1 0 011 1v4h1a1 1 0 010 2z"/></svg>
+  <div class="ms-3"><h3 class="text-lg font-medium">Aviso!</h3><p class="mt-1 text-sm">Informar que es importante completar su ficha Socioeconómica para que tener acceso a la información académica.</p></div>
+  <button type="button" class="ms-auto -mx-1.5 -my-1.5 p-1.5 h-8 w-8 rounded-lg hover:bg-green-700" data-dismiss-target="#al-301" aria-label="Cerrar"><svg class="w-3 h-3 mx-auto" fill="none" viewBox="0 0 14 14"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/></svg></button>
+</div><div id="al-891" class="flex p-4 mb-4 text-white bg-green-600 rounded-lg" role="alert">
+  <svg class="shrink-0 w-4 h-4 mt-1" fill="currentColor" viewBox="0 0 20 20"><path d="M10 .5a9.5 9.5 0 100 19 9.5 9.5 0 000-19zM9.5 4a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM12 15H8a1 1 0 010-2h1v-3H8a1 1 0 010-2h2a1 1 0 011 1v4h1a1 1 0 010 2z"/></svg>
+  <div class="ms-3"><h3 class="text-lg font-medium">Aviso!</h3><p class="mt-1 text-sm">Para visualizar detalles específicos de sus asignaturas como el nombre del docente o grupo de práctica asignado deben dirigirse a "Información académica->Mis Asignaturas".</p></div>
+  <button type="button" class="ms-auto -mx-1.5 -my-1.5 p-1.5 h-8 w-8 rounded-lg hover:bg-green-700" data-dismiss-target="#al-891" aria-label="Cerrar"><svg class="w-3 h-3 mx-auto" fill="none" viewBox="0 0 14 14"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/></svg></button>
+</div></div>
+  </section>
+  <section class="lg:col-span-2 bg-white rounded-lg shadow h-fit">
+   <h2 class="px-5 py-3 text-lg">Anuncios</h2>
+  </section>
+ </div></div>
+<div data-panel id="v-s0" class="hidden px-5 pb-16">
+  <div class="p-4 mb-4 bg-white border-t-4 border-blue-600 rounded-lg shadow">SEMANA 6</div>
+
+  <div id="cards" class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-4"></div>
+
+  <div class="grid lg:grid-cols-2 gap-4">
+    <div class="bg-white rounded-lg shadow">
+      <h2 class="px-5 py-3 text-lg border-b">Mis cursos</h2>
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm text-left">
+          <thead class="uppercase"><tr>
+            <th class="p-3">#</th><th>Asignatura</th><th>Progreso</th><th class="text-center">Promedio final</th>
+          </tr></thead>
+          <tbody id="cursos"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-lg shadow">
+      <h2 class="px-5 py-3 text-lg border-b">Mis asistencias</h2>
+      <div class="flex gap-4 px-5 pt-3 text-sm">
+        <span><i class="inline-block w-3 h-3 bg-emerald-400"></i> Presente</span>
+        <span><i class="inline-block w-3 h-3 bg-red-500"></i> Ausente</span>
+      </div>
+      <div id="asist" class="p-5 space-y-3"></div>
+    </div>
+  </div>
+</div>
+<div data-panel id="v-s1" class="hidden px-5 pb-16">
+  <div class="max-w-5xl mx-auto bg-white border border-gray-200 rounded-lg shadow">
+    <div class="px-4 py-3 text-white bg-blue-600 rounded-t-lg">Detalles del Estudiante</div>
+    <div class="grid md:grid-cols-3 gap-6 p-6">
+      <div class="flex flex-col items-center gap-3">
+        <img id="foto" class="object-cover w-48 h-60 rounded-full ring-4 ring-gray-300"
+             src="mifoto.jpeg" alt="Foto del estudiante">
+      </div>
+      <dl class="md:col-span-2 text-sm divide-y divide-gray-200">
+        <div class="grid grid-cols-2 py-2"><dt class="font-bold">CÓDIGO:</dt><dd>2511080097</dd></div>
+        <div class="grid grid-cols-2 py-2"><dt class="font-bold">DNI:</dt><dd>61086109</dd></div>
+        <div class="grid grid-cols-2 py-2"><dt class="font-bold">ESTUDIANTE:</dt><dd>CORDERO ZUÑIGA, CHRISTIAN ALDAIR</dd></div>
+        <div class="grid grid-cols-2 py-2"><dt class="font-bold">ESCUELA PROFESIONAL:</dt><dd>INGENIERÍA DE SISTEMAS</dd></div>
+        <div class="grid grid-cols-2 py-2"><dt class="font-bold">PLAN DE ESTUDIOS:</dt><dd>2024</dd></div>
+        <div class="grid grid-cols-2 py-2"><dt class="font-bold">E-MAIL:</dt><dd>2511080097@undc.edu.pe</dd></div>
+        <div class="grid grid-cols-2 py-2"><dt class="font-bold">MODALIDAD DE INGRESO:</dt><dd>CEPRE</dd></div>
+        <div class="grid grid-cols-2 py-2"><dt class="font-bold">FECHA DE PRIMERA MATRÍCULA:</dt><dd></dd></div>
+        <div class="grid grid-cols-2 py-2"><dt class="font-bold">CELULAR:</dt><dd>956519518</dd></div>
+        <div class="grid grid-cols-2 py-2"><dt class="font-bold">FECHA DE NACIMIENTO:</dt><dd>2007-06-19</dd></div>
+        <div class="grid grid-cols-2 py-2"><dt class="font-bold">DOMICILIO:</dt><dd>HERBAY ALTO MZ. A LT. 12 CALLE PRINCIPAL</dd></div>
+        <div class="grid grid-cols-2 py-2"><dt class="font-bold">UBIGEO:</dt><dd>LIMA - CAÑETE - SAN VICENTE DE CAÑETE</dd></div>
+        <div class="grid grid-cols-2 py-2"><dt class="font-bold">SITUACIÓN:</dt>
+          <dd><span class="px-2.5 py-0.5 text-xs font-medium text-white bg-green-600 rounded">REGULAR</span></dd></div>
+      </dl>
+    </div>
+  </div>
+</div>
+<div data-panel id="v-s2" class="hidden px-5 pb-16"><div class="p-6 bg-white border border-gray-200 rounded-lg shadow"><h2 class="mb-2 text-2xl font-bold text-gray-900">Ficha Socioeconómica</h2><p class="text-gray-600">Contenido de «Ficha Socioeconómica».</p></div></div>
+<div data-panel id="v-s3" class="hidden px-5 pb-16">
+  <div class="bg-white border border-gray-200 rounded-lg shadow">
+    <h2 class="px-5 py-3 text-lg border-b">Pagos estudiante</h2>
+    <div class="relative p-2 overflow-x-auto">
+      <table class="w-full text-sm text-left text-gray-600">
+        <thead class="text-gray-900 uppercase border-b">
+          <tr>
+            <th class="px-3 py-3">#</th><th class="px-3">Concepto</th><th class="px-3">Monto</th>
+            <th class="px-3">Número de operación</th><th class="px-3">Fecha pago</th>
+            <th class="px-3">Plazo para pago</th><th class="px-3">Estado</th>
+            <th class="px-3">Observación</th><th class="px-3">Acción</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="px-3 py-4">1</td><td class="px-3">Matrícula Regular</td><td class="px-3">90.00</td>
+            <td class="px-3">0992111</td><td class="px-3">2026-08-11 21:55:54</td>
+            <td class="px-3"><span class="bg-gray-500 text-white text-xs font-medium px-2 py-0.5 rounded">-</span></td>
+            <td class="px-3"><span class="bg-green-600 text-white text-xs font-medium px-2 py-0.5 rounded">Comprobante validado</span></td>
+            <td class="px-3"></td>
+            <td class="px-3"><button type="button" class="text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-full text-sm px-5 py-2.5">Registrar</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<div data-panel id="v-s4" class="hidden px-5 pb-16"><div class="p-6 bg-white border border-gray-200 rounded-lg shadow"><h2 class="mb-2 text-2xl font-bold text-gray-900">Información académica</h2><p class="text-gray-600">Aquí irá el contenido de la sección «Información académica».</p></div></div>
+<div data-panel id="v-s5" class="hidden px-5 pb-16">
+  <div class="bg-white border border-gray-200 rounded-lg shadow">
+    <div class="flex items-center justify-between px-5 py-3 border-b">
+      <h2 class="text-lg font-bold">Mis Trámites en Mesa de Partes</h2>
+      <button type="button" class="text-blue-700 border border-blue-700 hover:bg-blue-700 hover:text-white font-medium rounded-full text-sm px-4 py-1.5">Actualizar</button>
+    </div>
+    <div class="p-5">
+      <form class="flex max-w-sm mb-4">
+        <input type="search" class="block w-full p-2.5 text-sm text-gray-900 border border-gray-300 rounded-s-lg bg-white" placeholder="Buscar por asunto o código">
+        <button type="button" class="p-2.5 text-gray-700 bg-gray-100 border border-gray-300 rounded-e-lg hover:bg-gray-200" aria-label="Buscar">
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 20 20"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 111 8a7 7 0 0114 0z"/></svg>
+        </button>
+      </form>
+      <div class="relative overflow-x-auto">
+        <table class="w-full text-sm text-center text-gray-700">
+          <thead class="font-bold bg-gray-100">
+            <tr><th class="px-3 py-3">#</th><th>Código Web</th><th>Asunto</th><th>Fecha</th><th>Estado</th><th>Acciones</th></tr>
+          </thead>
+          <tbody>
+            <tr><td colspan="6" class="py-8 text-gray-500">No hay ningún trámite</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <p class="px-5 py-3 text-sm text-center text-gray-500 bg-gray-50 rounded-b-lg">Información proveniente del sistema de Mesa de Partes.</p>
+  </div>
+</div>
+<div data-panel id="v-s6" class="hidden px-5 pb-16"><div class="p-6 bg-white border border-gray-200 rounded-lg shadow"><h2 class="mb-2 text-2xl font-bold text-gray-900">Calidad</h2><p class="text-gray-600">Aquí irá el contenido de la sección «Calidad».</p></div></div>
+<div data-panel id="v-s7" class="hidden"></div>
+<div data-panel id="v-s8" class="hidden px-5 pb-16"><div class="p-6 bg-white border border-gray-200 rounded-lg shadow"><h2 class="mb-2 text-2xl font-bold text-gray-900">Biblioteca virtual</h2><p class="text-gray-600">Aquí irá el contenido de la sección «Biblioteca virtual».</p></div></div>
+ <footer class="fixed bottom-0 right-0 left-0 sm:left-64 flex justify-between px-5 py-3 text-sm bg-white border-t text-gray-500"><span><b>Copyright © 2026 SISACADEMICO UNDC.</b> Todos los derechos reservados.</span><span class="hidden md:block">Universidad Nacional de Cañete</span></footer>
+<script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+<script>
+const links=document.querySelectorAll('[data-view]'),panels=document.querySelectorAll('[data-panel]');
+links.forEach(a=>a.addEventListener('click',e=>{e.preventDefault();const v=a.dataset.view;
+ panels.forEach(p=>p.classList.toggle('hidden',p.id!=='v-'+v));
+ links.forEach(l=>{const on=l===a;l.classList.toggle('bg-blue-600',on);l.classList.toggle('text-white',on);l.classList.toggle('text-gray-300',!on);l.classList.toggle('hover:bg-gray-700',!on)});
+ document.getElementById('title').textContent=document.getElementById('crumb').textContent=a.dataset.title;
+ document.getElementById('sidebar').classList.add('-translate-x-full');}));
+</script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"/>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark" style="background-color: #f5c400;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Universidad UNDC</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="facultades.html"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Facultades
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="nav-link text-blue dropdown-item" href="empresariales.html">Facultad de Ciencias Empresariales</a>
+                  </li>
+                  <li>
+                    <a class="nav-link text-blue dropdown-item" href="ingenieria.html">Facultad de Ingeniería</a>
+                  </li>
+                  <li>
+                    <a class="nav-link text-blue dropdown-item" href="agricolas.html">Facultad de Ciencias Agrarias</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Posgrado
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="nav-link text-blue dropdown-item" href="#">Dirección de la Escuela de Posgrado UNDC</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Buscar"
+              aria-label="Buscar"/>
+            <button class="btn" type="submit" style="background-color: #0066cc; color: white;">Buscar</button>
+          </form>
+        </div>
+      </nav>
+    </nav>
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/imagen1.jpg" class="d-block w-100" alt="imagen 1" />
+        </div>
+        <div class="carousel-item">
+          <img src="img/imagen2.jpg" class="d-block w-100" alt="imagen 2" />
+        </div>
+        <div class="carousel-item">
+          <img src="img/imagen3.jpg" class="d-block w-100" alt="imagen 3" />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
