@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #ede7fb 0%, #f2f4f8 50%, #e3ecfb 100%);
+    background: linear-gradient(135deg, #e2d6fd 0%, #77d260 50%, #aecdff 100%);
     background-attachment: fixed;
     min-height: 100vh;
     margin: 0;
@@ -11,7 +11,7 @@ body {
  
 h1 {
     text-align: center;
-    color: #4e1da8;
+    color: #265814;
     font-size: 2.4rem;
     letter-spacing: 1px;
     margin-bottom: 10px;
@@ -102,7 +102,7 @@ h1 {
     padding: 25px;
     background-color: white;
     border-radius: 14px;
-    border-top: 5px solid #6c2bd9;
+    border-top: 5px solid #2bd97f;
     box-shadow: 0 8px 24px rgba(108, 43, 217, 0.18);
 }
  
@@ -127,12 +127,12 @@ textarea {
  
 input:focus,
 textarea:focus {
-    border-color: #6c2bd9;
+    border-color: #3fd92bb0;
     box-shadow: 0 0 0 3px rgba(108, 43, 217, 0.15);
 }
  
 button {
-    background: linear-gradient(135deg, #6c2bd9, #8b5cf6);
+    background: linear-gradient(135deg, #169a44, #4c8964);
     color: white;
     border: none;
     padding: 11px 18px;
@@ -146,7 +146,7 @@ button {
  
 button:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 14px rgba(108, 43, 217, 0.35);
+    box-shadow: 0 6px 14px rgba(43, 217, 84, 0.35);
 }
  
 button:disabled {
@@ -168,7 +168,7 @@ footer {
 }
  
 footer a {
-    color: #6c2bd9;
+    color: #088901;
     margin: 8px;
     text-decoration: none;
 }
